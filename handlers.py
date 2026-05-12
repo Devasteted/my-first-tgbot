@@ -69,7 +69,7 @@ async def on_git(callback: CallbackQuery):
     await callback.answer()
     await callback.message.edit_text(
         "🌐 Типа разработчик?, типа крутой?\n"
-        "Github: https://github.com\n",
+        "Github🐈‍⬛: https://github.com\n",
         reply_markup=menu_back()
     )
 
@@ -79,11 +79,13 @@ async def on_git(callback: CallbackQuery):
 async def on_itd(callback: CallbackQuery):
     await callback.answer()
     await callback.message.edit_text(
-        "БОЖЕ ДА СТАНЬ ЧАСТЬЮ ИТД, ПРИМКНИ К ПРОЕКТУ ЛУЧШЕГО SEO Ильи nowkie и тд\n"
-        "ИТД: https://итд.com/\n",
-        reply_markup=menu_back()
+        "БОЖЕ ДА СТАНЬ ЧАСТЬЮ ИТД, ПРИМКНИ К ПРОЕКТУ ЛУЧШЕГО SEO Ильи nowkie и тд\n\n"
+        "ИТД🦎: https://итд.com/\n\n"
+        "<a href='https://play.google.com/store/apps/details?id=com.itd.app&pcampaignid=web_share'>Скачать на Android👾</a>\n"
+        "<a href='https://apps.apple.com/ru/app/%D0%B8%D1%82%D0%B4/id6759969018'>Скачать на iOS🍎</a>",
+        reply_markup=menu_back(),
+        parse_mode="HTML"  # ← обязательно, иначе теги не сработают
     )
-
 
 
 

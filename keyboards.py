@@ -16,8 +16,8 @@ def menu_main() -> InlineKeyboardMarkup:
     # callback_data — строка, которую получит бот при нажатии (до 64 байт)
     builder.button(text="📖 О боте",      callback_data="about")
     builder.button(text="🆘 Помощь",      callback_data="help")
-    builder.button(text="🌐 GITHUB",    callback_data="git")
-    builder.button(text="ИТД", callback_data="itd")
+    builder.button(text="🐈‍⬛ GITHUB",    callback_data="git")
+    builder.button(text="🦎 ИТД", callback_data="itd")
     builder.adjust(2,2)  # по 2 кнопки в ряд
     return builder.as_markup()
 
